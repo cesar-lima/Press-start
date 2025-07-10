@@ -91,13 +91,32 @@ button{
     border-radius: 0.5rem;
     font-weight: 600;
     transition: 0.3s;
+    color: #000000
 }
 
 button:hover{
     cursor: pointer;
     transform: translateY(-2px);
     filter: brightness(0.9);
+}
+
+button:disabled{
+    cursor: not-allowed;
     
+    transform: initial;
+    transition: initial;
+    box-shadow: initial;
+
+}
+
+.loading{
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse{
+    50% {
+        opacity: 0.5;
+    }
 }
 
 @keyframes appear{
