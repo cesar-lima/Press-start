@@ -58,7 +58,7 @@ section h2{
     letter-spacing: -0.47px;
 }
 
-section p{
+section h2 + p{
     letter-spacing: -0.18px;
     color: #a1a1aa;
 }
@@ -81,6 +81,21 @@ form input, form select{
 
 form input{
     flex: 1;
+}
+
+#response{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+}
+
+#response ul{
+    padding-left: 1.5rem;
+    opacity: 0.8;
+}
+
+.hidden{
+    display: none;
 }
 
 button{
