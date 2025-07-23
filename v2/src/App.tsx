@@ -1,5 +1,6 @@
 import './styles/style.css'
 import logo from './assets/logo.png'
+import { ResponseContent } from './components/ResponseContent'
 
 export function App() {
   return (
@@ -15,8 +16,6 @@ export function App() {
             <p>Pergunte sobre estratégias e build para seus jogos!</p>
 
             <form id="form">
-              <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" />
-
               <select id="gameSelector">
                 <option value="">Selecione um jogo</option>
                 <option value="lol">League of Legends</option>
@@ -33,9 +32,7 @@ export function App() {
             </form>
 
             <div id="response" className="hidden">
-              <div className="response-content">
-
-              </div>
+              <ResponseContent />
             </div>
           </div>
         </section>
